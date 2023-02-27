@@ -6,10 +6,10 @@ const HexGridDemo = () => {
   const getHexProps = (hexagon) => {
     return {
       style: {
-        fill: "#007aff",
-        stroke: "white"
+        fill: "#33FFB8",
+        stroke: "white",
       },
-      onClick: () => alert(`Hexagon n.${hexagon} has been clicked`)
+      onClick: () => alert(`Hexagon n.${hexagon} has been clicked`),
     };
   };
 
@@ -28,12 +28,12 @@ const HexGridDemo = () => {
     );
   };
 
-  let hexagons = times(102, (id) => id);
+  let hexagons = times(138, (id) => id);
 
   return (
     <HexagonGrid
-      gridWidth={500}
-      gridHeight={500}
+      gridWidth={750}
+      gridHeight={750}
       hexagons={hexagons}
       hexProps={getHexProps}
       renderHexagonContent={renderHexagonContent}

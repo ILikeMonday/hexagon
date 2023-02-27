@@ -4,8 +4,8 @@ export default function App() {
   return (
     <div className="App">
       <HexGridDemo />
-      <h1>Hello CodeSandbox</h1>
-      <h2>Edit to see some magic happen!</h2>
+      <h1>กูยังเพิ่มcolumnไม่ได้เลยอีดอก</h1>
+      <h2>ช่วยด้วยยยยยยย</h2>
     </div>
   );
 }
