@@ -6,7 +6,7 @@ const HexGridDemo = () => {
   const getHexProps = (hexagon) => {
     return {
       style: {
-        fill: "#33FFB8",
+        fill: "#00E998",
         stroke: "white",
       },
       onClick: () => alert(`Hexagon n.${hexagon} has been clicked`),
@@ -28,7 +28,7 @@ const HexGridDemo = () => {
     );
   };
 
-  let hexagons = times(138, (id) => id);
+  let hexagons = times(120, (id) => id);
 
   return (
     <HexagonGrid

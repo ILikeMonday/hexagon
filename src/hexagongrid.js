@@ -10,8 +10,10 @@ const getGridDimensions = (gridWidth, gridHeight, numRows, numCols) => {
   const b = gridHeight / (2 * gridWidth) - 2;
 
   const columns =
-    numCols || Math.ceil((-b + Math.sqrt(b * b + 4 * numRows * a)) / (2 * a));
-  const rows = numRows || Math.ceil(hexagons.length / columns);
+    6 ||
+    numCols ||
+    Math.ceil((-b + Math.sqrt(b * b + 4 * numRows * a)) / (2 * a));
+  const rows = numRows || Math.ceil(HexagonGrid.hexagons.length / columns);
 
   const hexSize = Math.floor(gridWidth / (3 * columns + 0.5));
 
